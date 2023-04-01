@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'josefin sans', sans-serif;
+}
+section{
+    padding: 40px 15%;
+}
+.contact{
+    background: #101010;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap:6rem;
+}    
+.contact-img img{
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 90px;
+}
+.contact-from h1{
+    font-size: 80px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+span{
+    color: #ff274b;
+}
+.contact-from p{
+    color: #f7bcf7;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-from form{
+    position: relative;
+}
+.contact-from form input,
+form textarea{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #191919;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius:10px ;
+}
+.contact-from textarea{
+    resize: none;
+    height: 200px;
+}
+.contact-from form .btn{
+    display: inline-block;
+    background: #ff274b;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+    transition: 0.80s;
+}
+.contact-from form .btn:hover{
+    border:2px solid #ff274b;
+    background: transparent;
+}
+.brn{
+    background:#ff274b;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px;
+    border-radius: 10px;
+    transition: 1s;
+    display: block;
+    text-align: center;
+}
+.brn:hover{
+    background: transparent;
+    border: 2px solid #f9005d;
+    cursor: pointer;
+}
+@media (max-width:1500px){
+    section{
+        padding: 80px 3%;
+        transition: .2s;
+    }
+    .contact-from h1{
+        font-size: 60px;
+    }
+    .contact-from p{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width:1570px){
+    section{
+        padding: 80px  3%;
+        transition: 2s;
+    }
+    .contact-from h1{
+        font-size: 60px;
+    }
+    .contact-from p{
+        margin-bottom: 3rem;
+    }
+    
+}
+@media (max-width:1200px){
+    .contact-img img{
+        max-width: 80%;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+@media (max-width:1090px){
+    .contact{
+        grid-gap: 2;
+        transition: .3s;
+    }
+}
+@media (max-width:1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-from{
+        order: 2;
+    }
+    .contact-img img{
+        max-width: 80%;
+        width: 80%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
